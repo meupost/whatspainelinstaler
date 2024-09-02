@@ -47,13 +47,7 @@ get_frontend_url() {
   printf "\n\n"
   read -p "> " frontend_url
 }
-get_purchase_key() {
-  
-  print_banner
-  printf "${WHITE} 💻 Digite a sua Licença ${instancia_add}:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " purchase_key
-}
+
 get_backend_url() {
   
   print_banner
@@ -77,6 +71,14 @@ get_backend_port() {
   printf "${WHITE} 💻 Digite a porta do BACKEND para esta instancia; Ex: 4000 A 4999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_port
+}
+
+get_purchase_key() {
+  
+  print_banner
+  printf "${WHITE} 💻 Digite a sua Licença ${instancia_add}:${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " purchase_key
 }
 
 get_redis_port() {
@@ -171,6 +173,9 @@ get_urls() {
   get_backend_url
   get_frontend_port
   get_backend_port
+  get_purchase_key
+  
+  
   get_redis_port
 }
 
