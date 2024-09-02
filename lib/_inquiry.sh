@@ -11,7 +11,7 @@ get_mysql_root_password() {
 get_link_git() {
   
   print_banner
-  printf "${WHITE} 💻 Insira o link do GITHUB do WhaticketPremium que deseja instalar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Insira o link do GITHUB do WhatsPainel que deseja instalar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " link_git
 }
@@ -201,14 +201,14 @@ software_dominio() {
 inquiry_options() {
   
   print_banner
-  printf "${WHITE} 💻 Bem vindo(a) ao Gerenciador MultiPremium SWL, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bem vindo(a) ao Gerenciador WhatsPainel, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
   printf "\n\n"
-  printf "   [0] Instalar Sistema\n"
-  printf "   [1] Atualizar Sistema\n"
-  printf "   [2] Deletar Sistema\n"
-  printf "   [3] Bloquear Sistema\n"
-  printf "   [4] Desbloquear Sistema\n"
-  printf "   [5] Alter. dominio Sistema\n"
+  printf "   [0] Instalar WhatsPainel\n"
+  printf "   [1] Atualizar WhatsPainel\n"
+  printf "   [2] Deletar WhatsPainel\n"
+  printf "   [3] Bloquear WhatsPainel\n"
+  printf "   [4] Desbloquear WhatsPainel\n"
+  printf "   [5] Alter. dominio WhatsPainel\n"
   printf "\n"
   read -p "> " option
 
