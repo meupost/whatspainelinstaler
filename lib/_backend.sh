@@ -58,7 +58,7 @@ sudo su - deploy << EOF
 NODE_ENV=
 BACKEND_URL=${backend_url}
 FRONTEND_URL=${frontend_url}
-PURCHASE_KEY= chave da sua licença
+PURCHASE_KEY=${purchase_key}
 PROXY_PORT=443
 PORT=${backend_port}
 

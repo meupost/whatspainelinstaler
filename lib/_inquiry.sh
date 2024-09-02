@@ -47,7 +47,13 @@ get_frontend_url() {
   printf "\n\n"
   read -p "> " frontend_url
 }
-
+get_purchase_key() {
+  
+  print_banner
+  printf "${WHITE} 💻 Digite a sua Licença ${instancia_add}:${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " purchase_key
+}
 get_backend_url() {
   
   print_banner
