@@ -1,5 +1,13 @@
 #!/bin/bash
 
+get_purchase_key() {
+  
+  print_banner
+  printf "${WHITE} 💻 Digite a sua Licença ${instancia_add}:${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " purchase_key
+}
+
 get_mysql_root_password() {
   
   print_banner
@@ -10,10 +18,7 @@ get_mysql_root_password() {
 
 get_link_git() {
   
-  print_banner
-  printf "${WHITE} 💻 Insira o link do GITHUB do WhatsPainel que deseja instalar:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " link_git
+ link_git="https://github.com/meupost/wpvendac14e"
 }
 
 get_instancia_add() {
@@ -73,13 +78,6 @@ get_backend_port() {
   read -p "> " backend_port
 }
 
-get_purchase_key() {
-  
-  print_banner
-  printf "${WHITE} 💻 Digite a sua Licença ${instancia_add}:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " purchase_key
-}
 
 get_redis_port() {
   
@@ -164,6 +162,7 @@ get_alter_backend_port() {
 
 
 get_urls() {
+  get_purchase_key
   get_mysql_root_password
   get_link_git
   get_instancia_add
@@ -172,10 +171,9 @@ get_urls() {
   get_frontend_url
   get_backend_url
   get_frontend_port
-  get_backend_port
-  get_purchase_key
+  get_backend_port 
   
-  
+
   get_redis_port
 }
 
@@ -251,5 +249,3 @@ inquiry_options() {
     *) exit ;;
   esac
 }
-
-
