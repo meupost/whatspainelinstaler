@@ -8,6 +8,7 @@ get_purchase_key() {
   read -p "> " purchase_key
 }
 
+
 get_mysql_root_password() {
   
   print_banner
@@ -150,6 +151,13 @@ get_alter_frontend_port() {
   printf "\n\n"
   read -p "> " alter_frontend_port
 }
+get_alter_purchase_key() {
+  
+  print_banner
+  printf "${WHITE} 💻 Digite a porta do FRONTEND da Instancia/Empresa ${empresa_dominio}; A porta deve ser o mesma informada durante a instalação ${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " alter_purchase_key
+}
 
 
 get_alter_backend_port() {
@@ -218,6 +226,7 @@ inquiry_options() {
   printf "   [3] Bloquear WhatsPainel\n"
   printf "   [4] Desbloquear WhatsPainel\n"
   printf "   [5] Alter. dominio WhatsPainel\n"
+  printf "   [6] Alter. Licença\n"
   printf "\n"
   read -p "> " option
 
